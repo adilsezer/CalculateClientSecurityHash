@@ -1,4 +1,4 @@
-# UIPath project to generate the security hash for each client based on their personal information.
+## UIPath project to generate the security hash for each client based on their personal information.
 
 ## Process Steps
 1.1 Open the ACME System 1 Web Application.
