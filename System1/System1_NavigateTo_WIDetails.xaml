@@ -1,10 +1,10 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="System1_NavigateTo_WIDetails" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="System1_NavigateTo_WI" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_WIID" Type="InArgument(x:String)" />
     <x:Property Name="in_System1_URL" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1266,920</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1284,1230</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -30,17 +30,17 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>System.Collections.ObjectModel</x:String>
-      <x:String>System.Runtime.InteropServices</x:String>
-      <x:String>System.Reflection</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
       <x:String>UiPath.UIAutomationNext.Activities</x:String>
       <x:String>System.Activities.DynamicUpdate</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
-      <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -69,8 +69,6 @@
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
@@ -81,68 +79,99 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_NavigateTo_WIDetails" sap:VirtualizedContainerService.HintSize="672,855" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_NavigateTo_WI" sap:VirtualizedContainerService.HintSize="1018,1165" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser IE: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="630,763" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="2fb4e655-0e85-4f58-9968-baf63c87ac03" Version="V1">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,547" sap2010:WorkflowViewState.IdRef="Sequence_4">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="554,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Version="V1">
-              <uix:NGoToUrl.Url>
-                <InArgument x:TypeArguments="x:String">
-                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1" xml:space="preserve">in_System1_URL	+ "/work-items/" + in_WIID</mca:CSharpValue>
-                </InArgument>
-              </uix:NGoToUrl.Url>
-            </uix:NGoToUrl>
-            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Work Items'" sap:VirtualizedContainerService.HintSize="554,332" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2fb4e655-0e85-4f58-9968-baf63c87ac03" Version="V1">
-              <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Log Out'" sap:VirtualizedContainerService.HintSize="976,1073" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V1">
+      <uix:NCheckState.IfExists>
+        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="672,857" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="630,763" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="159c5d29-753a-4135-aecd-f26625e77bbc" Version="V1">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,547" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="554,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Version="V1">
+                    <uix:NGoToUrl.Url>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">String.Concat(in_System1_URL, "/work-items/", in_WIID)</mca:CSharpValue>
+                      </InArgument>
+                    </uix:NGoToUrl.Url>
+                  </uix:NGoToUrl>
+                  <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Work Items'" sap:VirtualizedContainerService.HintSize="554,332" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="159c5d29-753a-4135-aecd-f26625e77bbc" Timeout="10" Version="V1">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="250,116" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Throw DisplayName="Throw - Page Error" sap:VirtualizedContainerService.HintSize="208,22" sap2010:WorkflowViewState.IdRef="Throw_3">
+                          <InArgument x:TypeArguments="s:Exception">
+                            <mca:CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">new Exception("Could not navigate to WIID")</mca:CSharpValue>
+                          </InArgument>
+                        </Throw>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/78487393" DesignTimeRectangle="43, 170, 1140, 50" FriendlyName="'Work Items'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' aaname='                                                                                                                                                                                     Work Items                                                                                                                                         -                                                 Work Item Details                                                         ' check:text='Work Items&amp;#xD;&amp;#xA;                                                                                        ' /&gt;" Guid="d21320f7-87a7-4b32-b247-c60a082a35cf" ImageBase64="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" InformativeScreenshot="99303d7fa0d04c38f85b1e9d98199dd8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
                 </Sequence>
-              </uix:NCheckState.IfExists>
-              <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="250,116" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Throw DisplayName="Throw - WI Details Did not opened" sap:VirtualizedContainerService.HintSize="208,22" sap2010:WorkflowViewState.IdRef="Throw_1">
-                    <InArgument x:TypeArguments="s:Exception">
-                      <mca:CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">new Exception("Cannot navigate to Work Item Details page")</mca:CSharpValue>
-                    </InArgument>
-                  </Throw>
-                </Sequence>
-              </uix:NCheckState.IfNotExists>
-              <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/78487381" DesignTimeRectangle="122, 90, 940, 50" FriendlyName="'Work Items'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' aaname='Work Items - Work Item Details ' check:text='Work Items - Work Item Details' /&gt;" Guid="ec0572c9-ae2a-4e7e-80f8-c682ae8f8aea" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA7AAAAA2CAYAAAD+vHWaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA4ASURBVHhe7dzPkdtGE8bhLycH4AAUgBPw3Qk4AN91990BOAAH4ACUgg9OQa73k3r1bqunZ4YE/4D1e6q6xF0MgUEDQ/QAXP3vMwAAAAAAJ8AEFgAAAABwCkxgAQAAAACnwAQWAAAAAHAKTGABAAAAAKfABBYAAAAAcApMYAEAAAAAp8AEFgAAAABwCm8T2N9///3zDz/88Bb//PPP1yW9T58+vXuf4q+//vq6dM7fpz48i48fP771S6/v4eeff37bpl7j/BhX7zGuzkXnXORuJX788cf/5/i3337bOl9fxez89nPxXuc/AACv5m0C+/fff79dWBWrxccff/zx7n0KFS8rcnGkPjyLZy+0NcH55Zdfvv6EZ8W4eo9xdS75XNoN5fuR59+9j+fs/PZz8V7nPwAAr+bdV4g/fPiwfXFVcRDvifjpp5++Lu350ylt+5nMCpFbWC20vW94foyrbxhX53LtBDZCN2Tu7RHHc3Z+M4EFAOB67yawv/7669vFtSv0nL4ypvYqlOO1Qne+Z7xI17afyawQuYXVQjvaKPD8GFffMK7OJU9gZ98g0NNWTVY956vvPZpv+15m57fn5V7nPwAAr+bdBDZ/bXHGixsVzV6or9xx98L8EXfoOxTaOArj6hvG1bnsTmBd/vtvnZerfwN+BN/2s2ACCwDA9d5NYPV0xy/6s79d8mJUhbIX6iq8O/lvA+9Z2Kyg0MZRGFffMK7O5ZoJrORJ7L2Oufh2nwUTWAAArvduAiv+93qz/71Uf5MXbVWke6Guu+0dL2xW/7bvnii0cSTG1ReMq3O5dgIrnv97PoX1fj8LzwUTWAAALvPdBFb/02lcYLunPSpCop3/RzFefHdPmrTuaDf731W1LT2F0nv865Harn6nZTNeOKgI0zr11cxYn9alfmiyIKuFtj8dU1zzN4ddoZ0LySq64jLy5xMp7ful+RPlSvvr69TxV75ykaq2yq+3jZyvFLTxfu9HbE99uKSwvif1PfqsnI8wrr5gXN1nXM3k/HS5GPnzzz/frWMlL5fm9ZrjqVwqxzomPh4Uq58zs/Pbj3d3/p/98w4AgFv6bgLrxYaKhxEVEdHOC2W9jt93F2gvELqLsfqTi4kq1NeusPdCQOv0CYFH9GVWiIjnQHFNkS3eR7126pdvq4oqj8qJF4Gj2MmftpP3PYeOWaxPbbtj6G0rfiy6UB+PKNpvgXHFuKo8clytyPmpcrHC+9kdz2vzesnxjJsuVdsqus+Z2fntx3t0/vs6uuj6AQDAK/tuAqsLol8k48lJ5hd8Fa7BC3UVsxWtM9ooRqpiToWQLtyKqnjTeypeOHiBpD7GMu/vrBA5usgW76NeOxVr+p23iXYRuaDTzzlHnr9cKGpZVRSK2ke7XOzF+vK29Ds/H+J3VVv1pZL/hk4R61DkZaNz7tEYV18wrt5T+2h3z3G16qgJrPoW69DryhF51c/R3tvG7xT5PTo/va0izl9F7pNCv6/Mzm+9r1v+Kp93AADc0ncTWPEL+qhw9Yt6vgscv6+WiRep+kpYJRdOKl68oA9al/dFr6vJQb745+JH/fSfu0LkFkW2eB/1esS3PaIceF6Uv6r41O/8eOs91TGriic9FcxtcxEefcht9Tq3zcdXbXwf1D5vr1rP6Jx9NMYV4yp7xLjakc+Xal9X+HFXZEfnVaKNYiSfc+pntb68XUU1HrrzW/x45+Xarufg7J93AADcSjmB9a8r6nWmgjSWVwWhX6Sri6tfgEf/oY0KmGij16MiRdQfv/DP+qSYFXWjQuRWRbZ4H6t9CL79Ec+xCq8uf1rmxVm1Tzl/1XkR/NjttM0FnRfP6l9HE7ZoO5q8PRrjinGV5fzdY1zt8DGoqCaVK/y4K7Kj8yqxXDHieeryKdquj4dqDI7O7+DHOy9/tc87AABupZzAzi6k/jWnqlD25VVx4UWDP50JXsgrVoqmXADnu+NeOKgImakKkVsW2XJUoa1Cy9us5M+PeZWfXGh3BaYXo7O2PqnLhdhOQaeJk/qtflaF4zNgXDGuskeMqx3ef8XKPlf8uCvcLfIqvs4R5SaOQfVENfPjVX3OVOe3697v+/QKn3cAANxKOYGVuJAqcqHkF+FZoayi2qlIiGWjwsOLgPz+jtYX78t3x73Pej2TC5Fc/B9dZMtqH70fFRU3sfzS/OUicid/nrtr2lY574r2M/D9YVwxrnbyd9S42uGTKkXu/yrvj8LdIq8SyxRH8eOlfcp8P6vl3ftf8fMOAIBbGE5g/ULrxYHfLR8VyuLFhRfj/rRlVKz616N2CtquOJgVHpkXIuqP749CRdfRvI96PeL9qHjf1W+tayV8H7v8zY6Jb1/v68za6klELI/Q7/S+S4vpR/I8Mq4YV1oey+45rlbpHI31KC4dc94fhbtFXiWWKS6lcal91vp9/Ciqbfq+VMvV7275q33eAQBwC8MJ7OhC7HfLu4JLy6Kdfx3Sf5+f5oTZRX7Evzandbjddfr+V6EnBUffHfc+5v4770clF1qXRM7RTv48d91+yKytJml5kpND+6tz6drj4fs4itn+zPj+eh4ZV1+CcTXmuev2Q3bado6awPo5pHC3yKv48hX6rNF61B/lbPa5U23T814tnx3ve37eAQBwVsMJrC6kccH0AsgLkVGhLFoW7XTBDX6HefQ3R7OL/IgXD7lo212nrytC++HFhXJxJO9j7r+LNoqKr+fSyDnayV93HLKVtirUNEGbFXYKHZNLC7uVvM32Z4ZxxbhyO/nrjkO207Zz1ATW9zP3x5ddGlXufHlHN49048Tbj8LP02qbnvdque9rtVzu9XkHAMBZDSewEhdQ/Rv8Qt/9pxfV3+TpQhu/U8E9snKRr/gkwIt72V2nFyKKeCrm/5GO4sivdXkf9XrEt1/x9US/r7WTP89dtx+y01ZUbGqfuoJzZT0V38dRXLpux7j60l7BuFrP385Y2WnbOWoC6+vINyhukVfxbY74DSEPjUf1S33VuRn7PTtenvdq+ez92S0/7wAAOKt2AqtiNS6SenLkxXNXKIf8VMi/JpmLGOfb3SlouuJgt3DwQiQX7b5fKiyOugPufeyKkmijqHjfjypudvK3s/1r+qpzSgWozpGYFEboXHtWjKsv7RlXzzmu3BET2DxJzGPzFnkV32bFx51C55/61p13s+Pl+1It3zne2Vk/7wAAOFo7gfWnIrpweiHSFcpBbaK9LrD55xEvAlTIrvKLuvrqdguHrhDxr4EqVnKxwvvYFXK+7UouGI+YCOzkz3PX7YfstO2ouPPjP+vjIzGu6vaMq+cbV0dMYH0fq/PuFnkVX2fFc6RzfGW7fpOlOl6+zmr5zvHunOnzDgCAo7UTWC8oVUzqzm/8vHLHV22ivS6wfvHu5EJ2pWjKRZAu8G63cFCbrr0vV1xS2GXeR70e8e1W8pOFlf2N96hA07bz/uzkz3PT7Yd0bTXR0+9U9OaJU2Wnj4/EuBq39+UKxtU3nptuP2SnbUf9jfUodo9H/mp4tY+3yKv4Oiue+5Uc5fFT9dPzXi33beblr/p5BwDA0doJrOhiqgukLpZ+93lVtPeLrV7PeHv1obs7rsLC70ZX6/f1rVzsZ4WI+hO5Ucz6uGI1R9FGMdqmr0uhHHX866XV04id/Hnuuv2Qrq1P7HTuzfjxUDH4zBhXjCvZyV83VrKdtp1rJrB58tody6PzKr6+armvQ33r6P0+ThXV8fK8V8u74/3Kn3cAABxpOoH1i2pE/tu1TlywvRBeudjmwkkX6+rplO5U+7oVVfHTFQ6VWSEiuY/XfuXR+6jXI77N0Z36PPnQa+U9F3J6kuHbVewWXpnnrtsP6drm/Gq5+pvpd7mgrdo9E8YV40p28ue56/ZDdtp28rHQzx0tVz7yZE956ialR+dVvE11PLV+b6MxWU109V6fLEZU2/W8V8u7451zrbav8nkHAMCRphNYXbz9oqpYKZRDLhIUXSHjqm3rYq0Lu8ILnohR4dkVDpVZIRLyRGRW4HW8j3o9kovDyEfedpU/b18VZdqfitpHm1n+PHd6X2fWVpOXWB6hfnf7MDoHngnjinElah9tZvmbjRW307aTJ1WXhM6nlXPzyLzK7Hhqslqd69FOkZf5OqsbTrPz29dZLX/VzzsAAI40ncDqzm6+YK4WyqK2/l4VDDv0dKgqMnLowt4VubPCIZsVIiEXQerHpbyPej3ifwPpUfVTOamKniq6J107+fPcdfshK22roq4KHYezFHOMK8aV7OTPc9fth+y07Wg/Yz2XhLa983TwqLzKyvHUOFoZB5q4qq3nozonPe/V8Vw53q/4eQcAwJGmE1jxguKSQtILhO6O+YiKWT1x0sU/F7W6C75yEV8pHNysEHH5ycHK+iveR73uqDjLTxi6r6Cqj1qei0NtRwXTrMjcyZ/nbrYfq23VP/XT+6HQ+aDf6fyovv73zBhXjKud/HnuZvux07azO4FVHrQ9nVc7E9fs2ryGlePp48Db6X0aV8qB87GSl3neq+Pp2+iO9yt+3gEAcJSlCSwAAAAAAI/GBBYAAAAAcApMYAEAAAAAp8AEFgAAAABwCkxgAQAAAACnwAQWAAAAAHAKTGABAAAAAKfABBYAAAAAcApMYAEAAAAAp8AEFgAAAABwCkxgAQAAAACnwAQWAAAAAHAKTGABAAAAAKfABBYAAAAAcApMYAEAAAAAp8AEFgAAAABwCkxgAQAAAACn8DaB/ffffwmCIAiCIAiCIAji6SLwBBYAAAAAcApMYAEAAAAAJ/D5839WNgYagB5fWwAAAABJRU5ErkJggg==" InformativeScreenshot="a17f52a3ae7ff3b28d47ac8f9cb56eb3.png" ScopeSelectorArgument="&lt;html title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector" />
-              </uix:NCheckState.Target>
-            </uix:NCheckState>
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="8, 180, 1184, 520" BrowserType="IE" IconBase64="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" InformativeScreenshot="f3f048421c353dc1a9eae010faff0ad6.png" Selector="&lt;html title='ACME System 1*' /&gt;" />
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="118, 1, 945, 910" BrowserType="Edge" IconBase64="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" InformativeScreenshot="7835de113702f6e7d57e0bc209d61071.png" Selector="&lt;html app='msedge.exe' title='ACME System 1*' /&gt;" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </uix:NCheckState.IfExists>
+      <uix:NCheckState.IfNotExists>
+        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="250,116" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Throw DisplayName="Throw - Not logged in" sap:VirtualizedContainerService.HintSize="208,22" sap2010:WorkflowViewState.IdRef="Throw_2">
+            <InArgument x:TypeArguments="s:Exception">
+              <mca:CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">new Exception("User is not logged into ACME system")</mca:CSharpValue>
+            </InArgument>
+          </Throw>
+        </Sequence>
+      </uix:NCheckState.IfNotExists>
+      <uix:NCheckState.Target>
+        <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items" DesignTimeRectangle="759, 80, 80, 50" ElementType="Text" FriendlyName="'Log Out'" FullSelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' check:text='Log Out' /&gt;" Guid="a190eab5-c231-42ff-b651-7275ba989bd9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAA2CAYAAABZV76QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGuSURBVHhe7ZbBkYQgEEU9GsdkQRbkQQ5kQAjGYlgee4VBp0Vwd6f+bsnUt+odsLEHHg3MsCyLEBzDPM9CcAyPx0MIDgoFQ6FgKBQMhYKhUDAUCoZCwVAoGAoFQ6FgKBQMhYKhUDAUCoZCwVAoGAoFQ6FgKBQMTKhxQSZvq7E/w3qZpkkRxJlKvyZGXJjE21rsPboVan1FoHESVrHBmUPfNl0LfQ5+r6ayr6624MRFYa18qa8XW4slqS/RSbzOs8eP4/n5IlzzT0Lz4Pd40c6VtVfKJreR7ySpIMY3QW2hsd1rhdYqSk3s/G25AJpn7KqidL6PFJpi6zY2h/dWfJ6YrqiNdhVSKFjodSyi832kUOyWX4FcSrHdq9CToKKdJqkm9s2lFEmilLhEzqOrPY1LyT9+d3ehUUJJKfH0PrNJjOS/TVfnZEJ/kygEJ46/6+3rqInxfdwXi/cbYELR6HOwJ24hNFWJvrSKc7AnblKhxXHQqczIbbd8r1AoGAoFQ6FgKBQMhYKhUDAUCoZCwVAoGAoFQ6FgKBQMhYKhUDAUCoZCwQzjOArBMQgf4CPyBQnzvkPU+nAJAAAAAElFTkSuQmCC" InformativeScreenshot="a760318f437b85b8da1c8cf7c0d80270.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1*' /&gt;" SearchSteps="FuzzySelector" />
+      </uix:NCheckState.Target>
+    </uix:NCheckState>
   </Sequence>
 </Activity>

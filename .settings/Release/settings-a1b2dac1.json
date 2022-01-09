@@ -35,7 +35,7 @@
   "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyTypedText": "False",
   "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyActivities": "False",
   "UiPath.UIAutomationNext.Activities.ApplicationCard.CloseMode": "Never",
-  "UiPath.UIAutomationNext.Activities.ApplicationCard.OpenMode": "IfNotOpen",
+  "UiPath.UIAutomationNext.Activities.ApplicationCard.OpenMode": "Never",
   "UiPath.UIAutomationNext.Activities.ApplicationCard.ResizeWindow": "None",
   "UiPath.UIAutomationNext.Activities.ApplicationCard.UserDataFolderMode": "Automatic",
   "UiPath.UIAutomationNext.Activities.ApplicationCard.UserDataFolderPath": "",

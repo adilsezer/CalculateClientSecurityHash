@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.12.0.0",
-  "projectVersion": "1.0.2",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -43,38 +43,38 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "9021583c-b071-4431-bd46-72916ed0194b",
+        "testCaseId": "4de0d1bd-0548-4a5f-a4d8-80758f7838ae",
         "dataVariationFilePath": ".variations\\Tests_Tests.json",
         "fileName": "Tests\\GeneralTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "32f17dbe-606e-46a4-83a1-d3e397cafe0e",
+        "testCaseId": "b935e511-3a21-4f09-b9d2-08f34d5b838c",
         "fileName": "Tests\\GetTransactionDataTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "18eb4e85-50b7-43fb-ba28-15d23bb9a9b8",
+        "testCaseId": "54fffdfa-33b0-49c3-a50b-6907c1b9e9d0",
         "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "c82ac606-72d3-4975-8adf-66aca4e90992",
+        "testCaseId": "6793152a-fd03-4a27-9bd2-e9e4939c698a",
         "fileName": "Tests\\InitAllSettingsTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "0b2f5e4c-e1ef-475c-a41c-19737aa01110",
+        "testCaseId": "ce452192-4b5d-40a4-a326-1ef48a4fa2dd",
         "fileName": "Tests\\MainTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "cb94f8bf-7c6f-44c0-98a1-ef129001f1b4",
+        "testCaseId": "7829ca42-aa66-4d7a-bfa4-f429702e5d2e",
         "fileName": "Tests\\ProcessTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "ef59778c-007d-4dde-bfcd-e2993ff364b0",
+        "testCaseId": "34788614-005f-4b45-baa1-06236a1da3e7",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
       }
     ],
@@ -84,7 +84,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "b6fd092f-84eb-4d9b-bcf5-8cd1bd788004",
+      "uniqueId": "67956955-e1a6-4b5c-b2d4-05bdcd00c69a",
       "input": [],
       "output": []
     }
